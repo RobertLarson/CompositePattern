@@ -23,6 +23,7 @@ BookGroup::~BookGroup() {
 
 		delete bookComponent;
 	}
+	m_bookComponents.clear();
 }
 
 void BookGroup::Add(BookComponent * newComponent)
@@ -43,7 +44,6 @@ void BookGroup::Remove(BookComponent * componentToRemove)
 			break;
 		}
 	}
-	m_bookComponents.clear();
 }
 
 void BookGroup::DisplayInfo()
